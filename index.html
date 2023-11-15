@@ -299,14 +299,43 @@
                 </div>
                 <div class="col-12">
                     <h2>часто задаваемые вопросы</h2>
-                    <div class="col-3">
-                        <button type="button" class="btn">Как купить?</button>
-                    </div>
-                    <div class="col-3">
-                        <button type="button" class="btn">Как доставить?</button>
-                    </div>
-                    <div class="col-3">
-                        <button type="button" class="btn">Какая гарантия?</button>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample1">Где купить?</a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                aria-controls="multiCollapseExample2">Как доставить?
+                        </button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                aria-controls="multiCollapseExample2">Какая гарантия?
+                        </button>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    Купить можно в нашем интернет магазине, отправив имя и email через форму,
+                                    расположенную на главной странице сайта. Наш менеджер с вами свяжется и все подробно
+                                    объяснит.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body">
+                                    Эту информацию вам скажет менеджер. Оставьте свои контактные данные через форму,
+                                    расположенную на главной странице сайта.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                <div class="card card-body">
+                                    Гарантия год с момента доставки товара
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
