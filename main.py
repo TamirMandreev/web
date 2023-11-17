@@ -306,10 +306,12 @@ class MyServer(BaseHTTPRequestHandler):
                     <h1>
                         <form>
                             <div class="mb-3">
-                                <input name="name" type="text" class="form-control" id="exampleInputEmail1" placeholder="Имя">
+                                <input name="name" type="text" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Имя">
                             </div>
                             <div class="mb-3">
-                                <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
+                                <input name="email" type="email" class="form-control" id="exampleInputPassword1"
+                                       placeholder="email">
                             </div>
 
                             <button type="submit" class="btn btn-primary form-control">Отправить</button>
@@ -357,6 +359,46 @@ class MyServer(BaseHTTPRequestHandler):
                         </div>
                     </div>
 
+                </div>
+                <div class="col-12 mt-3">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">№</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество товара</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Мышка</td>
+                            <td>100$</td>
+                            <td>10 шт.</td>
+                            <td>1000$</td>
+                            <td class="alert alert-primary" role="alert">Новый</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Коврик</td>
+                            <td>10$</td>
+                            <td>10 шт.</td>
+                            <td>100$</td>
+                            <td class="alert alert-warning" role="alert">Обработка</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Клавиатура</td>
+                            <td>50$</td>
+                            <td>10 шт.</td>
+                            <td>500$</td>
+                            <td class="alert alert-success" role="alert">Обработан</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
